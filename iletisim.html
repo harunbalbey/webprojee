@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <style>
+        button {
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           background-color: #ffffff;
+           color: #fa0707;
+           cursor: pointer;
+           transition: background-color 0.3s;
+           margin-top: 20px;
+            }
+            button:hover {
+              background-color: #ffee00;
+                     }
+       #üstmerkez  {
+             text-align: center;
+             margin-bottom: 20px;
+                  }  
+        body {
+            background-image: url('h1.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+         h2 {
+          color: #ebebeb;
+          }
+          label {
+              color: #ebebeb;
+               }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            background-color: #dc590d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #d508b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="üstmerkez" style="text-align: center; margin-bottom: 20px;">
+        <button onclick="window.location.href='projee.html'">Anasayfa</button>
+        <button onclick="window.location.href='iletisim.html'">İletişim Sayfası</button>
+        
+      
+      </div>
+    <div class="container">
+        <h2>İletişim Formu</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
